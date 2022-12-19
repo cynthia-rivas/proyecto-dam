@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_recetas"
         android:name="com.example.healthfood.ui.recetas.RecetasFragment"
-        android:label="@string/title_home"
+        android:label="Recetas"
         tools:layout="@layout/fragment_recetas" >
         <action
             android:id="@+id/action_navigation_home_to_recetaDetailsFragment"
@@ -16,15 +16,15 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_videos"
         android:name="com.example.healthfood.ui.videos.VideosFragment"
-        android:label="@string/title_dashboard"
+        android:label="Videos"
         tools:layout="@layout/fragment_videos" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_recordatorios"
         android:name="com.example.healthfood.ui.recordatorios.RecordatoriosFragment"
-        android:label="@string/title_notifications"
+        android:label="Recordatorios"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/recetaDetailsFragment"
@@ -35,5 +35,21 @@
             android:name="receta"
             app:argType="com.example.healthfood.model.Receta"
             app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.healthfood.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_recordatorios"
+            app:destination="@id/navigation_recordatorios" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_videos"
+            app:destination="@id/navigation_videos" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_recetas"
+            app:destination="@id/navigation_recetas" />
     </fragment>
 </navigation>
