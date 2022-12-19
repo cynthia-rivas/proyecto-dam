@@ -1,4 +1,4 @@
-package com.example.healthfood.ui.recordatorios;
+package com.example.healthfood.ui.informacion;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.healthfood.databinding.FragmentInformacionBinding;
 import com.example.healthfood.databinding.FragmentRecordatoriosBinding;
 
-public class RecordatoriosFragment extends Fragment {
+public class InformacionFragment extends Fragment {
 
-    private FragmentRecordatoriosBinding binding;
+    private FragmentInformacionBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        RecordatoriosViewModel recordatoriosViewModel =
-                new ViewModelProvider(this).get(RecordatoriosViewModel.class);
+        InformacionViewModel informacionViewModel =
+                new ViewModelProvider(this).get(InformacionViewModel.class);
 
-        binding = FragmentRecordatoriosBinding.inflate(inflater, container, false);
+        binding = FragmentInformacionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textRecordatorios;
-        recordatoriosViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textInformacion;
+        informacionViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

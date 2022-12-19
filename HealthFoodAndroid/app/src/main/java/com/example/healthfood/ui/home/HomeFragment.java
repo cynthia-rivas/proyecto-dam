@@ -15,7 +15,6 @@ import androidx.navigation.Navigation;
 
 import com.example.healthfood.R;
 import com.example.healthfood.databinding.FragmentHomeBinding;
-import com.example.healthfood.databinding.FragmentNotificationsBinding;
 import com.example.healthfood.ui.recetas.RecetasFragmentDirections;
 
 public class HomeFragment extends Fragment {
