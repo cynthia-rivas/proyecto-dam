@@ -28,7 +28,7 @@ public class RecetasViewModel extends ViewModel {
                 "Pollo con crema de espinaca",
                    new String[]{"Aceite de coco", "2 piezas de pollo cocido", "1 taza de espinaca", "Queso","Un puñado de almendras","Sal de mar" },
                 "Prepara en una bandeja untandole con aceite de coco, coloca el pollo. Mezclar en el procesador el queso, las almendras, las espinacas y la sal a tu gusto, luego verter esta mezcla sobre el pollo. poner en el Horno unos 10-15 minutos a 175º C-",
-                "https://www.cardamomo.news/__export/1647463199513/sites/debate/img/2022/03/16/pollo_con_crema_y_espinacas_crop1647463178056.jpeg_172596871.jpeg")
+                "https://elmundoenrecetas.s3.amazonaws.com/uploads/recipe/main_image/513/pollo_con_espinacas.jpg")
             );
 
 

@@ -43,6 +43,21 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        binding.buttonInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToInformacion();
+            }
+        });
+
+        binding.buttonRecordatorios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToRecordatorios();
+            }
+        });
+
+
 
 
         return root;
@@ -60,6 +75,19 @@ public class HomeFragment extends Fragment {
         @NonNull NavDirections action = HomeFragmentDirections.actionNavigationHomeToNavigationVideos();
         navController.navigate(action);
     }
+
+    public void navigateToInformacion(){
+        NavController navController = Navigation.findNavController(this.getActivity(), R.id.nav_host_fragment_activity_main);
+        @NonNull NavDirections action = HomeFragmentDirections.actionNavigationHomeToInformacionFragment();
+        navController.navigate(action);
+    }
+
+    public void navigateToRecordatorios(){
+        NavController navController = Navigation.findNavController(this.getActivity(), R.id.nav_host_fragment_activity_main);
+        @NonNull NavDirections action = HomeFragmentDirections.actionNavigationHomeToNavigationRecordatorios();
+        navController.navigate(action);
+    }
+
 
     @Override
     public void onDestroyView() {

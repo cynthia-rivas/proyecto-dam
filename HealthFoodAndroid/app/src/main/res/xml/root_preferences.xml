@@ -1,0 +1,36 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="Recordatorios">
+
+        <SwitchPreferenceCompat
+            app:key="tomar_agua"
+            app:title="Tomar agua"
+            android:summaryOn="Cada 2 horas"
+            android:summaryOff="Cada 2 horas"/>
+
+        <SwitchPreferenceCompat
+            app:key="respirar"
+            app:title="Respirar 30 segundos"
+            android:summaryOn="Cada 2 horas"
+            android:summaryOff="Cada 2 horas"/>
+
+        <SwitchPreferenceCompat
+            app:key="acostarse"
+            app:title="Acostarse temprano "
+            android:summaryOn="10:00 pm cada dia"
+            android:summaryOff="10:00 pm cada dia"/>
+
+        <SwitchPreferenceCompat
+            app:key="hacer_ejercicio"
+            app:title="Hacer ejercicio fisico"
+            android:summaryOn="Una vez al dia, muy temprano 7:00am."
+            android:summaryOff="Una vez al dia, muy temprano 7:00am."/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
