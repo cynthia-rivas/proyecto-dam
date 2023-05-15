@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link type="text/css" rel="stylesheet" href="Paquete\css\main.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+            <li><a href="info.html">Informacion Nutricional</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="inicio_sesion.html">Iniciar sesion/Crear usuario</a></li>
+        </ul>
+    </nav>
+
+    <header class="principal">
+        <h1>Health Food-Comida saludable</h1>
+        <p><img src="Imagenes/logo.jfif" alt="" /></p>
+        <p>
+            Todo lo que necesitas para comer sano</a>.
+        </p>
+    </header>
+
+    <main class="recetas">
+        <section class="buscador-recetas">
+            <form id="formBuscador" method="POST" action="recetas.php">
+                <label for="busqueda">Buscar receta:</label>
+                <input type="text" id="busqueda" name="busqueda" placeholder="Introduce el nombre de la receta o categoría" value="">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        
+        <?php include('recetas.php'); ?>
+
+        <section class="articulos-recetas">
+            <article>
+                <h2>Risotto</h2>
+                <img src="Imagenes/receta1.jpg" alt="Ensalada Cesar">
+                <p>Ingredientes: lechuga, pollo, croutones, queso parmesano, salsa César.</p>
+                <a href="modeloreceta.html">Ver receta</a>
+            </article>
+
+            <article>
+                <h2>Pollo Asado</h2>
+                <img src="Imagenes/receta2.jpg" alt="Tarta de zanahoria">
+                <p>Ingredientes: zanahorias, nueces, canela, huevos, azúcar, harina.</p>
+                <a href="modeloreceta.html">Ver receta</a>
+            </article>
+
+            <article>
+                <h2>Sopa de verduras</h2>
+                <img src="Imagenes/receta3.jpg" alt="Pollo al horno con verduras">
+                <p>Ingredientes: pollo, patatas, zanahorias, cebolla, aceite de oliva, sal y pimienta.</p>
+                <a href="modeloreceta.html">Ver receta</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h6>Aplicacion y web hechas por cynthia y rodrigo</h6>
+    </footer>
+</body>
+</html>
+
+
