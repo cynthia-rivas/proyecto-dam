@@ -11,29 +11,29 @@
             <li><a href="recetas.html">Recetas</a></li>
             <li><a href="consejos.html">Consejos</a></li>
             <li><a href="info.html">Informacion Nutricional</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="inicio_sesion.html">Iniciar sesion/Crear usuario</a></li>
+            
         </ul>
     </nav>
 
     <main class="auth-container">
         <section class="auth-form">
             <h2>Crear usuario</h2>
-            <form id="signupForm">
-                <label for="signupUsername">Usuario</label>
-                <input type="text" id="signupUsername" name="signupUsername" placeholder="Introduce tu nombre de usuario" required>
-                <label for="signupPassword">Contraseña</label>
-                <input type="password" id="signupPassword" name="signupPassword" placeholder="Introduce tu contraseña" required>
-                <button type="submit">Crear usuario</button>
+            <form action="registro.php" method="post">
+                <p>Usuario <input type="text" placeholder="Ingrese su usuario" name="usuario"> </p>
+                <p>Contraseña <input type="contraseña" placeholder="ingrese su contraseña" name="contraseña"></p>
+                <input type="submit">Crear usuario</input>
             </form>
         </section>
         <section class="auth-form">
-            <h2>Iniciar sesión</h2>
-            <form id="signinForm">
-                <label for="signinUsername">Usuario</label>
-                <input type="text" id="signinUsername" name="signinUsername" placeholder="Introduce tu nombre de usuario" required>
-                <label for="signinPassword">Contraseña</label>
-                <input type="password" id="signinPassword" name="signinPassword" placeholder="Introduce tu contraseña" required>
-                <button type="submit">Iniciar sesión</button>
-            </form>
+            <h2>Iniciar sesion</h2>
+            <form action="validar.php" method="post">
+        <p>Usuario <input type="text" placeholder="Ingrese su usuario" name="usuario"> </p>
+        <p>Contraseña <input type="contraseña" placeholder="ingrese su contraseña" name="contraseña"></p>
+
+        <input type="submit">iniciar sesion</input>
+    </form>
         </section>
     </main>
     <footer>
